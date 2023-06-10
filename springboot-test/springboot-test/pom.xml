@@ -39,7 +39,7 @@
 		<dependency>
 			<groupId>com.h2database</groupId>
 			<artifactId>h2</artifactId>
-			<scope>test</scope>
+		<!--	<scope>test</scope> -->
 		</dependency>
 
 		<dependency>
@@ -53,6 +53,14 @@
 			<artifactId>shedlock-spring</artifactId>
 			<version>5.3.0</version>
 		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/io.springfox/springfox-boot-starter -->
+		<dependency>
+			<groupId>io.springfox</groupId>
+			<artifactId>springfox-boot-starter</artifactId>
+			<version>3.0.0</version>
+		</dependency>
+
 
 
 

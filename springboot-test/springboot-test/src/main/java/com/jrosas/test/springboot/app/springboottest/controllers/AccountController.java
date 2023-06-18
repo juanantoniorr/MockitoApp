@@ -26,7 +26,7 @@ public class AccountController {
         return accountService.findById(id);
     }
     @PostMapping("/transfer")
-    public ResponseEntity<?> transferir (@RequestParam AccountTransferDTO accountTransferDTO){
+    public ResponseEntity<?> transferir (@RequestBody AccountTransferDTO accountTransferDTO){
         accountService.transfer(accountTransferDTO.getOriginId(),
                 accountTransferDTO.getTargetId(), accountTransferDTO.getAmount(),
                 accountTransferDTO.getBankId());
